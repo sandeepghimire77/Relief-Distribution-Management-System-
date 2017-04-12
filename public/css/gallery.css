@@ -1,0 +1,58 @@
+
+
+#container{
+    height:450px;
+    width:650px;
+    margin-left: 0px;
+}
+#img{
+    border:2px solid grey;
+    height:450px;
+    width:650px;
+    position:absolute;
+}
+#leftholder{
+    height:800px;
+    width:100px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#rightholder{
+    height:800px;
+    width:100px;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+.left{
+    height:30px;
+    width:30px;
+    position:absolute;
+    top:40%;
+    left:370px;
+}
+.right{
+    height:30px;
+    width:30px;
+    position:absolute;
+    top:40%;
+    right:850px;
+}
+.aside1{
+    float:right;
+    margin-top:20px;
+}
+.relief{
+    height:100px;
+    width:108px;
+    border:3px solid grey;
+    float:right;
+    margin-top:0px;
+}
+#mydiv{
+    cursor:pointer;
+
+}
+
+

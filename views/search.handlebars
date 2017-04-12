@@ -1,0 +1,32 @@
+{{> header}}
+<div id="jpt">
+
+</div>
+<div>
+    <div class="data-table">
+        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each rows}}
+                <tr>
+                    <td>{{this.FirstName}}</td>
+                    <td>{{this.LastName}}</td>
+                    <td>{{this.Email}}</td>
+                    <td>{{this.Contact}}</td>
+                    <td>{{this.Address}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{{> footer}}

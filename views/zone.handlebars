@@ -1,0 +1,203 @@
+<<<<<<< HEAD
+    <script>
+        function fieldsetup() {
+            var t=document.forms["Forms"]["placename"].value;
+            var u=document.forms["Forms"]["zonename"].value;
+            var v=document.forms["Forms"]["districtname"].value;
+            var w=document.forms["Forms"]["postedbyname"].value;
+            var x=document.forms["Forms"]["contactnumber"].value;
+            var y=document.forms["Forms"]["email"].value;
+            var z=document.forms["Forms"]["detaildescription"].value;
+            if(t==""||t==null||u==""||u==null||v==""||v==null||w==""||w==null||x==""||x==null||y==""||y==null||z==""||z==null){
+                var display = document.getElementById("mydisplay");
+                display.classList.toggle("viewss");
+            }
+            else{
+                var display = document.getElementById("mydis");
+                display.classList.toggle("viewss");
+            }
+        }
+    </script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AdminLTE 2 | Registration Page</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="/css/AdminLTE.min.css">
+    </head>
+<body class="hold-transition register-page">
+<div class="register-box">
+    <div class="register-box-body">
+        <p class="login-box-msg">Affected Area Setup</p>
+        <form action='/place/zone' method="post">
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Place Name" name="placename" required>
+                <span class="glyphicon glyphicon-globe form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Zone Name" name="zonename" required>
+                <span class="glyphicon glyphicon-home form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="District Name" name="districtname" required>
+                <span class="glyphicon glyphicon-send form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Posted By" name="postedbyname" required>
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Contact" name="contactnumber" required>
+                <span class="glyphicon glyphicon-phone-alt form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" name="detaildescription" placeholder="Detail Description">
+                <span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary" onclick="fieldsetup()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div><!-- /.form-box -->
+</div><!-- /.register-box -->
+
+<!-- jQuery 2.1.4 -->
+<script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="/plugins/iCheck/icheck.min.js"></script>
+=======
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+    <title>RDMS</title>
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+
+        <link href="default.css" rel="stylesheet" type="text/css" />
+        <link href="slide.css" rel="stylesheet" type="text/css" />
+        <link href="/css/contact.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css"></style>
+
+    <link rel="stylesheet" href="/css/sty.css" />
+
+
+    <script>
+
+        function fieldsetup() {
+            var t=document.forms["Forms"]["placename"].value;
+            var u=document.forms["Forms"]["zonename"].value;
+            var v=document.forms["Forms"]["districtname"].value;
+            var w=document.forms["Forms"]["postedbyname"].value;
+            var x=document.forms["Forms"]["contactnumber"].value;
+            var y=document.forms["Forms"]["email"].value;
+            var z=document.forms["Forms"]["detaildescription"].value;
+
+            if(t==""||t==null||u==""||u==null||v==""||v==null||w==""||w==null||x==""||x==null||y==""||y==null||z==""||z==null){
+                var display = document.getElementById("mydisplay");
+                display.classList.toggle("viewss");
+
+            }
+            else{
+                var display = document.getElementById("mydis");
+                display.classList.toggle("viewss");
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div id="jpt">
+
+</div>
+<h2 class="page-header">Affected Area Setup</h2>
+
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form name="Forms" method="post" action="/place/zone">
+    <div class="form-group">
+        <label>Place Name</label>
+        <input type="text" class="form-control" placeholder="Place Name" name="placename">
+    </div>
+    <div class="form-group">
+        <label>Zone</label>
+        <input type="text" class="form-control" placeholder="Zone Name" name="zonename">
+    </div>
+    <div class="form-group">
+        <label>District</label>
+        <input type="text" class="form-control" placeholder="District Name" name="districtname">
+    </div>
+    <div class="form-group">
+        <label>Posted By</label>
+        <input type="text" class="form-control" placeholder="Posted By" name="postedbyname">
+    </div>
+    <div class="form-group">
+        <label>Contact Number</label>
+        <input type="Text" class="form-control" placeholder="+49123456789" name="contactnumber">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="abc@xyz.com" name="email">
+    </div>
+    <div class="form-group">
+        <label>Detail Description</label>
+        <input type="text" class="form-control" placeholder="Detail Description" name="detaildescription">
+    </div>
+
+                <div class="flash">
+                    <span class="flashtext" id="mydisplay">Empty fields</span>
+                    <span class="flashtext" id="mydis">Thank you so much for your information!</span>
+
+                </div>
+
+    <button type="submit" class="btn btn-default" onclick="fieldsetup()">Submit</button>
+    <br>
+
+
+
+
+  <!--  <button onclick="Filltheform();">Say it!</button> -->
+</form>
+<!--<script>function sayHello(event) {
+    this.textContent ="sayit";
+    var title= document.querySelector("#title")
+            .textContent;
+document.querySelector("button")
+        .addEventListener("click",sayHello);
+}
+}</script> -->
+
+
+>>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+</body>
+</body>

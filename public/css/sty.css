@@ -1,0 +1,179 @@
+
+
+/* header div layout css */
+
+#primary_nav_wrap
+{
+    margin-top:20px;
+    background-color: #87ceeb !important;
+}
+/* search css */
+#src {
+float: left;
+    width: 430px;
+
+}
+
+.container-fluid {
+
+    background-color: #87ceeb;
+    padding-bottom: 10px;
+   /* background-image: url("../images/paper.gif");*/
+}
+
+#sside {
+    width:1200px;
+    height:800px;
+    background-color: #ffffff;
+}
+#banners {
+    width: 1200px;
+    height:500px;
+    background-color: #ffffff;
+   /* height: 400px; */
+}
+/* #space {
+    width:300px;
+    height:400px;
+    float:left; */
+
+
+    #banner #img-border {
+
+float:left;
+}
+
+
+
+
+
+#newssection {
+    width: 100%;
+    height: 50px;
+}
+
+/* #spacee {
+    width:400px;
+    height:400px;
+    background-color: #ffffff;
+} */
+
+#jpt {
+    width:100%;
+    height:100px;
+    background-color: #ffffff;
+}
+#jptt {
+    width:100%;
+    height:100px;
+    background-color: #ffffff;
+}
+
+#news {
+
+    width: 380px;
+    height:400px;
+    float:left;
+    margin: 0 0 15px 0;
+    padding: 10px 40px ;
+   /*  background-image: url("../images/paper.gif");
+    background-repeat: repeat; */
+
+
+    background-color: lightblue;
+    /*background-image:url("../images/bg.png");*/
+
+
+}
+#intro {
+    width: 790px;
+    float:left;
+    background-color: transparent;
+    padding:0px 0px 0px 5px;
+   /* background-color: #ffffff;
+  background: url("../images/bg.png"); */
+   /* background-image: url("../images/paper.gif");
+    background-repeat: repeat; */
+   /*  background-attachment: fixed;
+    background-position: center; */
+    /* background-color: #cccccc;*/
+
+
+
+
+        /* background-image:url("../images/bg.png");
+        box-shadow: 10px 10px grey;
+        background-repeat:no-repeat;
+        background-blend-mode: color-dodge; */
+
+
+
+}
+#logoo {
+    width:150px;
+    height:80px;
+}
+#center {
+    float:right;
+}
+#thoke {
+    width: 100%;
+}
+#lok1 {
+    width: 33.3%;
+    float:left;
+
+
+}
+#loke2 {
+    width: 33.3%;
+    float:left;
+}
+#loke {
+    width: 33.3%;
+    float:left;
+
+}
+<<<<<<< HEAD
+
+#jpttt {
+
+    width: 100%;
+    height: 950px;
+
+}
+#jpt {
+    width: 100%;
+    height: 100px;
+}
+#j {
+    width: 100px;
+    height: 10px;
+}
+/* userlist edit css */
+#down {
+    width: 100%;
+    height: 400px;
+
+}
+#full {
+    width: 100%;
+}
+#full1{
+    width: 40%;
+    float: left;
+
+}
+#full2{
+    width: 60%;
+    float: left;
+}
+/* user service list */
+
+#lgn{
+
+    float: right !important;
+}
+
+=======
+>>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825

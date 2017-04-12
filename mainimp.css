@@ -1,0 +1,241 @@
+* {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+body {
+	background-image:url("image.jpg");
+	
+	
+}
+header,nav,article,section,footer {
+	display:block;
+}
+.container {
+	width:1000px;
+	height:800px;
+	margin :0px auto;
+	border:2px solid black;
+	background-color:#ccccff;
+}
+.logo {
+	float:left;
+	width:100px;
+	
+}
+  .navclass {
+	float:left;
+	width:766px;
+	height:100px;
+	border:1px solid white;
+	background-color: #004080;
+	line-height:28px;
+	font-size:18px; 
+	
+}
+.header_side {
+	background-color:#FFFF66;
+	
+}
+
+.li {
+	font-style:italic;
+}
+
+.logo
+{
+	
+	float:left;
+	width:232px;
+	float:left;
+}
+.clear 
+{
+	clear:both;
+}
+
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#000000
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#00264d;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+ /* .top_nav  {
+	float:left;
+	
+	
+	
+	
+	width:766px; */
+	
+	
+/* width i change here from 768 to 468                    */
+
+ /* .top_nav ul li  {
+	float:left;
+	padding:35px 20px; 
+	color:red;
+	
+	
+	}
+.top_nav ul li a:hover {
+	color:#FFFF66;
+	
+	
+	
+} */
+/* this is a code for drop down menu 
+
+	
+  .top_nav ul {list-style.css: none;padding: 0px;margin: 0px;}
+  .top_nav ul li {display: block;position: relative;float: left;border:1px solid #000}
+  .top_nav ul li ul {display: none;}
+  .top_nav ul li ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
+           white-space: nowrap;color: #fff;}
+  .top_nav ul li  ul li a:hover {background: #f00;}
+  .top_nav ul li  ul li:hover ul {display: block; position: absolute;}
+  .top_nav ul li  ul li:hover li {float: none;}
+ .top_nav ul li  ul li:hover a {background: #f00;}
+ .top_nav ul li  ul li:hover li a:hover {background: #000;}
+  #drop-nav li ul li {border-top: 0px;} */ 
+
+	
+
+	
+/* float aside and main section */
+.l {
+	float :left;
+	width:200px;
+	
+	padding:35px 20px;
+	border:2px solid black;
+	background-color: #ffffff;
+}
+.l {
+	padding:35px 20px;
+	border:2px solid black;
+	width:150px;
+	float:left;
+	background-color: #ffffff;
+	
+	
+	
+	
+}
+
+.1   div  ul   a {
+	text-decoration:none;
+	list-style-type:none;
+	color:#ffffff;
+	
+}
+
+
+.left_side {
+	float:left;
+	width:500px;
+}
+
+.right_side {
+	float:left;
+	width:300px;
+}
+
+.left_side article {
+	
+	margin-right:10px;
+	padding:10px;
+	
+}
+.right_side div {
+	border:2px solid blue;
+	padding:10px;
+	margin:0px 0px 10px 0px;
+}
+.page_footer {
+	clear:both;
+	text-align:center;
+}
+
+
+/* manageing all div element */
+/* for search button we can do this */
+#search {
+	float:left;
+	width:245px;
+	Background-color:black;
+	
+	
+}
+

@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+<div id="jpt">
+
+</div>
+<h2>Service</h2>
+<div class="col-md-8">
+    {{#each rows}}
+        <div>
+            <h3>{{this.ServiceName}}</h3>
+        </div>
+    {{/each}}
+    <br/>
+=======
+<<<<<<< HEAD
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>RDMS</title>
+
+    <link rel="stylesheet" href="/css/sty.css" />
+</head>
+<body>
+<div id="jpt">
+
+</div>
+<h1>Service</h1>
+
+=======
+<h1>Service</h1>
+
+>>>>>>> 6ee28f4e41903102499c6acfaae9694e38b93ea9
+<div class="col-md-8">
+
+    {{#each rows}}
+        <div>
+            {{this.ServiceName}}
+        </div>
+    {{/each}}
+    <br/>
+
+>>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" border="1">
+
+        <thead>
+
+        <tr>
+
+            <td>Service Description</td>
+
+            <td>Service Type</td>
+
+            <td>Service Provider</td>
+
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        {{#each rows}}
+
+            <tr>
+
+
+                <td>{{this.ServiceDescription}}</td>
+
+                <td>{{this.ServiceType}}</td>
+
+                <td>{{this.ServiceProvider}}</td>
+
+
+
+
+            </tr>
+
+        {{/each}}
+
+        </tbody>
+
+    </table>
+</div>
+
+</div>
+</body>
+</html>

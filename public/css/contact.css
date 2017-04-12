@@ -1,0 +1,153 @@
+.aside1{
+    float:right;
+    width:37%;
+    height:300px;
+    margin-left:150px;
+    margin-right:0px;
+    margin-top:0px;
+    font-size:20px;
+
+    border:2px solid transparent;
+}
+
+#map {
+    margin-top:10px;
+    height:400px;
+    width: 47%;
+}
+.section1{
+    float:left;
+
+
+    margin:auto;
+    width:700px;
+    font-size:20px;
+}
+.aside2{
+    float:right;
+    width:30%;
+
+}
+
+#rcorner{
+    border-radius: 25px;
+    background:skyblue;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+input[type=text]{
+    width: 70%;
+    padding: 10px 10px;
+
+}
+input[type=email]{
+    width: 70%;
+    padding: 10px 10px;
+
+
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    margin-left:100px;
+    height:50px;
+
+    border-radius: 4px;
+
+
+}
+
+.formvalid{
+    font-size:15px;
+}
+.map1{
+    margin-top:20px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+
+
+}
+
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+
+.button{
+    background-color:ghostwhite;
+
+}
+
+.location{
+    background-color: #5bc0de;
+}
+.forms{
+    background-color: transparent;
+}
+#div1{
+    display:none;
+}
+#div2{
+    display:none;
+}
+
+.flash {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+
+
+}
+
+
+.flash .flashtext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+
+
+.flash .viewss {
+    visibility: visible;
+    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}

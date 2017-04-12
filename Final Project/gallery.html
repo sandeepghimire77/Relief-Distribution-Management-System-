@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>Gallery</title>
+   
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    
+   
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="slide.css" rel="stylesheet" type="text/css" /> 
+    <link href="gallery.css" rel="stylesheet">
+	<style type="text/css"></style>
+	
+	
+	<script>
+		var imagecount=1;
+		var total=5;
+		
+		function slide(x){
+		var Image=document.getElementById("img");
+		imagecount=imagecount + x;
+		if(imagecount>total){imagecount=1;}
+		if(imagecount<1) {imagecount=total;}
+		Image.src="images/img"+ imagecount +".jpg";
+		}
+	  
+	    window.setInterval(function slideAuto(){
+		var Image=document.getElementById("img");
+		imagecount=imagecount + 1;
+		if(imagecount>total){imagecount=1;}
+		if(imagecount<1) {imagecount=total;}
+		Image.src="images/img"+ imagecount +".jpg";
+		},3000);
+	
+	</script>
+	</head>
+<body onLoad="slideAuto()">
+	<div class="container">
+
+    
+        <div class="navbar navbar-inverse navbar-fixed-top"> 
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             
+               <header>
+<img src ="logo.png" alt ="logo.area" class="logo.png" width = "100" height ="50" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                
+                       <li><a href="">AREA</a></li> 
+                       <li> <a href=""> DISTRIBUTION CENTER </a> </li>
+                    <li><a href="gallery.html">GALLERY</a></li> 
+                    <li><a href="contact.html">CONTACT</a></li> 
+					
+                </ul>
+            </div>
+     </header>
+           
+        </div>
+    </div> 
+    <aside class="aside1">
+	<img height="330px"; width="400px"; style="border:3px solid grey" src="images/relief1.jpg"  id="mainimage">
+	<br/>
+	<div id="mydiv" onClick="changeImage(event)">
+	
+		<img class="relief" src="images/relief1.jpg">
+		<img class="relief" src="images/relief2.jpg">
+		<img class="relief" src="images/relief3.jpg">
+		<img class="relief" src="images/relief4.jpg">
+		</div>
+		<h3>Distribution Programs 2016</h3>
+		</aside>
+		<script>
+			function changeImage(event){
+			event= window.event;
+			var targetElement= event.srcElement;
+			if(targetElement.tagName=="IMG")
+			{
+			document.getElementById("mainimage").src=targetElement.getAttribute("src");
+			}
+			}
+		</script>
+    <br/>
+   <div id="container">
+	<img src="images/img1.jpg" id="img">
+	
+	<div id="leftholder"><img src="images/arrowleft.png" class="left" onClick="slide(-1)"></div>
+	<div id="rightholder"><img src="images/arrowright.jpg" class="right" onClick="slide(1)"></div>
+	</div>
+	<h3>Distribution programs 2015</h3>
+    <br/>
+	
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	<div id="footer-bg">
+			<div id="footer-content" class="container">
+			<div id="column1">
+			<h2>Recommended Links</h2>
+			<ul class="style1">
+				<li class="first">Nepal Relief fund </li>
+				<li>Kantipur paper .</li>
+				<li>Samtahik paper </li>
+				<li>Journel on our projects </li>
+				<li>Latest links </li>
+				<li></li>
+			</ul>
+			</div>
+			<div id="column3"></div>
+			<div id="column4">
+			<h2>Social</h2>
+			<ul class="style1">
+				<li class="first"><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Google +</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">RSS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container">
+  <p>&copy; Untitled. All rights reserved. Design byTeam </p>
+</div>
+</div>
+</div>
+</body>
+</html>

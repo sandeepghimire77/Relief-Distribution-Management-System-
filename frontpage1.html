@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RDMS Website</title>
+	<link rel="stylesheet" href="new 1.css">
+	<script type="text/javascript">
+		var image_tracker="f";
+		function change(){
+		var image=document.getElementById("disaster");
+			if(image_tracker=="f") {
+				image.src = "relief3.jpg"
+				image_tracker = "t";
+			}
+			else{
+				image.src="relief2.jpg";
+				image_tracker="f";
+			}
+		}
+		var timer=setInterval("change()",2000);
+
+	</script>
+
+</head>
+<body div class="container">
+
+	<header>
+		<img src="relief1.jpg" alt="logo" class="image"/>
+		<br/>
+
+		<nav class="top">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contacts</a></li>
+				<li><a href="">Services</a></li>
+
+			</ul>
+		</nav>
+
+	</header>
+	<div class="clear"></div>
+</header>
+<section class="section1">
+     <article>
+	  <ul>
+				<li><a href="">Zone1</a></li><br/>
+				<li><a href="">Zone2</a></li><br/>
+				<li><a href="">Zone3</a></li>
+
+
+			</ul>
+
+
+
+	</article>
+
+</section>
+<aside class="aside1">
+       <div>
+	   <h1>Social Links</h1><br/>
+	   <ul>
+	         <li><a href="">Facebook</a></li>
+			 <img src="facebook.png" class="fb"/>
+	         <li><a href="">Twitter</a></li>
+			 <img src="twitter.jpg" a href="facebook.com" class="tw"/>
+			 </ul>
+      </div>
+	  <br/>
+	  <div>
+	  <h1>Related News</h1><br/>
+
+			   <h3>A fund is given to zone1</h3>
+			   <h3>zone2 needed food</h3>
+		</div>
+<br/>
+
+			   <ul>
+				<li><a href="">Members</a></li><br/>
+				<li><a href="">Collected funds</a></li>
+
+				</ul>
+
+	  </div>
+
+</aside>
+
+<img src="relief2.jpg" alt="bck" id="disaster" class="image1" onclick="setInterval();"/>
+<button class="button"><a href="login.html">Login</a></button>
+
+
+
+
+<footer class="footer1">
+		@copyright. All rights reserved
+	</footer>
+	</body>
+	</html>

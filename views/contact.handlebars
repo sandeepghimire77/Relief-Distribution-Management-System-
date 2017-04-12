@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>contact</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="slide.css" rel="stylesheet" type="text/css" />
+    <link href="/css/contact.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css"></style>
+    <br/><br/><br/>
+    <script>
+
+        function myfunction() {
+            var x=document.forms["myform"]["name"].value;
+            var y=document.forms["myform"]["email"].value;
+            var z=document.forms["myform"]["Names"].value;
+
+            if(x==""||x==null||y==""||y==null||z==""||z==null){
+                var pop = document.getElementById("myPopup");
+                pop.classList.toggle("show");
+
+            }
+            else{
+                var pop = document.getElementById("myPop");
+                pop.classList.toggle("show");
+
+            }
+        }
+
+    </script>
+    <script>
+        var fadeinform=0;
+        var fadeoutform=10;
+        function fadeIn(element) {
+            var target=document.getElementById(element);
+            target.style.display = "block";
+            var newsetting = fadeinform;
+            target.style.opacity = newsetting;
+            fadeinform++;
+            if (fadeinform == 10) {
+                target.style.opacity = 1;
+                clearTimeout(looptimer);
+                fadeinform = 0;
+                return false;
+            }
+            var looptimer = setTimeout('fadeIn(\'' + element + '\')', 100);
+        }
+        function fadeOut(element){
+            var target=document.getElementById(element);
+
+            var newsetting=fadeoutform;
+            target.style.opacity=newsetting;
+            fadeoutform--;
+            if(fadeoutform==0){
+                target.style.opacity=0;
+                target.style.display="none";
+                clearTimeout(looptimer);
+                fadeoutform=10;
+                return false;
+            }
+            var looptimer=setTimeout('fadeOut(\''+element+'\')',50);
+        }
+    </script>
+</head>
+<br/>
+<body>
+
+
+
+
+
+    <aside class="aside1">
+        <h3 align="center">Our Location</h3><br/>
+        <div>
+        <button onclick="fadeIn('div1')" class="button">Show</button>
+            <button onclick="fadeOut('div1')" class="button">Hide</button>
+             <br/><br/>
+        <div id="div1" class="location">
+
+            <p align="left"><strong> <img src="/images/location.jpg" width="16" height="16" class="loc">   Address: </strong> Kamaladi,Kathmandu,Nepal</p>
+            <p align="left"><strong> <img src="/images/tel.png" width="16" height="16" class="loc">  Phone: </strong> +977 014529746, +977 01525634</p>
+            <p align="left"><strong> <img src="/images/email.jpg" width="16" height="16" class="loc">  Email: </strong> reliefmanagement@gmail.com</p>
+            <p align="left"><strong> <img src="/images/website.png" width="16" height="16" class="loc">   Website: </strong> reliefmanagement.org.np</p><br/>
+        </div><br/>
+        </div> <br/>
+    </aside>
+
+
+    <div id="map" class="map1">
+
+
+        <script>
+            function initMap() {
+                var nepal = {lat: 27.71,lng: 85.32};
+                var map = new google.maps.Map(document.getElementById('map'), {zoom: 15,center: nepal});
+                var marker = new google.maps.Marker({position: nepal,map: map});
+            }
+
+        </script>
+        <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQzkXUVU1_unYhz1F6y-twor5GpZQ4II&callback=initMap">
+        </script><br/>
+    </div>
+
+    <br/>
+
+    <aside class="aside2">
+        <div>
+            <h4 id="rcorner">We are always ready to answer your queries. You can call, email or fill the form to get your answers.</h4>
+
+        </div>
+    </aside>
+
+
+    <section class="section1">
+        <article>
+            <h4>Please fill the form below to reach at us<br /><h4>
+                <button onclick="fadeIn('div2')" class="button">Show</button>
+                <button onclick="fadeOut('div2')" class="button">Hide</button>
+                <br/><br/>
+                <div id="div2" class="forms">
+                <form name="myform">
+                    <div class="formvalid">
+                        Name : <input type="text" name="name" required><br/><br/>
+                        Email : <input type="email" name="email" required><br/><br/>
+                        <textarea name="Names" rows="6" cols="65" type="message" required placeholder="Message"></textarea><br/>
+
+                        <div class="popup">
+                            <span class="popuptext" id="myPopup">Empty fields</span>
+                            <span class="popuptext" id="myPop">Thankyou</span>
+
+                        </div>
+                        <input type="submit"  value="Submit" onClick="myfunction()">
+
+                    </div>
+                </form>
+                    </div>
+        </article>
+    </section>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

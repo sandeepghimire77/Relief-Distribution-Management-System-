@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gallery</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="slide.css" rel="stylesheet" type="text/css" />
+    <link href="/css/gallery.css" rel="stylesheet">
+    <style type="text/css"></style>
+
+    <script>
+
+        var imagecount=1;
+        var total=4;
+
+        function slide(x){
+            var Image=document.getElementById("img");
+            imagecount=imagecount + x;
+            if(imagecount>total){imagecount=1;}
+            if(imagecount<1) {imagecount=total;}
+            Image.src="/images/imgs"+ imagecount +".jpg";
+        }
+
+        window.setInterval(function slideAuto(){
+            var Image=document.getElementById("img");
+            imagecount=imagecount + 1;
+            if(imagecount>total){imagecount=1;}
+            if(imagecount<1) {imagecount=total;}
+            Image.src="/images/imgs"+ imagecount +".jpg";
+        },3000);
+
+    </script>
+</head>
+<body>
+{{> header}}
+<br/>
+    <aside class="aside1"><br/>
+        <img height="330px"; width="430px";  src="/images/relief1.jpg"  id="mainimage">
+        <br/>
+        <div id="mydiv" onClick="changeImage()">
+
+            <img class="relief" src="/images/relief1.jpg">
+            <img class="relief" src="/images/relief2.jpg">
+            <img class="relief" src="/images/relief3.jpg">
+            <img class="relief" src="/images/relief4.jpg">
+
+        </div>
+          <br/><br/>
+        <h3>Distribution Programs 2016</h3>
+
+    </aside>
+    <script>
+        function changeImage(abc){
+           abc= window.event;
+            var targetElement= abc.srcElement;
+            if(targetElement.tagName=="IMG")
+            {
+                document.getElementById("mainimage").src=targetElement.getAttribute("src");
+            }
+        }
+    </script>
+
+    <div id="container"><br/><br/>
+        <img src="/images/imgs1.jpg" id="img">
+
+        <div id="leftholder"><img src="/images/arrowleft.png" class="left" onClick="slide(-1)"></div>
+        <div id="rightholder"><img src="/images/arrowright.jpg" class="right" onClick="slide(1)"></div>
+    </div><br/>
+    <h3>Distribution programs 2015</h3>
+    <br/>
+<<<<<<< HEAD
+{{> footer}}
+=======
+
+
+
+
+
+
+</div>
+</div>
+>>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+</body>
+</html>

@@ -1,0 +1,213 @@
+<<<<<<< HEAD
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Registration Page</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/css/AdminLTE.min.css">
+</head>
+<body>
+<body class="hold-transition register-page">
+<div class="register-box">
+    <div class="register-box-body">
+        <p class="login-box-msg">New Service Type Setup</p>
+        <form action="/helptype/service" method="post">
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Service Name" name="servicename" required>
+                <span class="glyphicon glyphicon-gift form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Service Description" name="servicedescription" required>
+                <span class="glyphicon glyphicon-text-size form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Service Type" name="servicetype" required>
+                <span class="glyphicon glyphicon-flag form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" placeholder="Service Provider" name="serviceprovider" required>
+                <span class="glyphicon glyphicon-qrcode form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+                </div>
+            </div>
+        </form>
+    </div><!-- /.form-box -->
+</div><!-- /.register-box -->
+
+<!-- jQuery 2.1.4 -->
+<script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="/plugins/iCheck/icheck.min.js"></script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/sty.css" />
+</head>
+<body>
+
+<div id="jpt" style="min-height: 300"></div>
+
+<!--<div id="thoke">-->
+    <!--<div id="loke2">-->
+<!--.-->
+    <!--</div>-->
+<!--<div id="loke" >-->
+
+<h2 class="page-header" align="center">New Service Type Setup</h2>
+<div class="col-sm-6 col-sm-offset-3">
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+    </div>
+    <!-- starts
+    <div class="container">
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- code ends here -->
+
+
+
+<div class="container" style="min-height: 600px;">
+    <div class="col-sm-6 col-sm-offset-3">
+<form method="post" action="/helptype/service">
+
+    <div class="form-group row">
+        <label for="example-text-input" class="col-xs-3 col-form-label">Service Name</label>
+        <div class="col-xs-9">
+            <input class="form-control" type="text" placeholder="Service Name" name="servicename">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-search-input" class="col-xs-3 col-form-label">Service Description</label>
+        <div class="col-xs-9">
+            <input class="form-control" type="text" placeholder="Service Description" name="servicedescription">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-email-input" class="col-xs-3 col-form-label">Service Type</label>
+        <div class="col-xs-9">
+            <input class="form-control" type="text" placeholder="Service Type" name="servicetype">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-email-input" class="col-xs-3 col-form-label">Service Provider</label>
+        <div class="col-xs-9">
+            <input class="form-control" type="text" placeholder="Service Provider" name="serviceprovider">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+    <!--<table class="table table-bordered " class="col-sm-2" align="right">-->
+        <!--<thead>-->
+        <!--<tr >-->
+
+        <!--<td>-->
+        <!--<label>Service Name</label>-->
+
+
+        <!--<input type="text" class="form-control" placeholder="Service Name" name="servicename">-->
+        <!--</td>-->
+
+        <!--</tr>-->
+        <!--<tr>-->
+    <!--&lt;!&ndash; <div class="form-group" align="center"> &ndash;&gt;-->
+        <!--<td>-->
+            <!--<label>Service Description</label>-->
+        <!--<input type="text" class="form-control" placeholder="Service Description" name="servicedescription">-->
+        <!--</td>-->
+    <!--&lt;!&ndash; </div> &ndash;&gt;-->
+        <!--</tr>-->
+        <!--<tr >-->
+
+        <!--<td>-->
+            <!--<label>Service Type</label>-->
+        <!--<input type="text" class="form-control" placeholder="Service Type" name="servicetype">-->
+        <!--</td>-->
+
+        <!--</tr> &lt;!&ndash; here &ndash;&gt;-->
+        <!--<tr >-->
+
+        <!--<td><label>Service Provider</label>-->
+        <!--<input type="text" class="form-control" placeholder="Service Provider" name="serviceprovider">-->
+        <!--</td>-->
+
+        <!--</tr>-->
+    <!--<tr >-->
+        <!--<td><button type="submit" class="btn btn-default" align="center">Submit</button></td>-->
+    <!--</tr>-->
+   <!--&lt;!&ndash;<p>-->
+            <!--<div class="form-group" align="center">-->
+                <!--<label>Service Description</label>-->
+                <!--<input type="text" class="form-control" placeholder="Service Description" name="servicedescription">-->
+            <!--</div>-->
+        <!--</p>&ndash;&gt;-->
+
+    <!--</table>-->
+
+</form>
+
+
+
+
+    </div>
+
+
+<!--</div>-->
+<!--<div id="lok1">-->
+
+<!--</div>-->
+</div>
+
+
+
+
+>>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+</body>

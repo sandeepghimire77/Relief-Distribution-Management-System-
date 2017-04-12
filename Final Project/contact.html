@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>Contact</title>
+   
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    
+   
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="slide.css" rel="stylesheet" type="text/css" /> 
+    <link href="contactcss/contact.css" rel="stylesheet" type="text/css">
+	
+    <style type="text/css"></style>
+	<script>
+
+	function myfunction() {
+			var x=document.forms["myform"]["name"].value;
+			var y=document.forms["myform"]["email"].value;
+			var z=document.forms["myform"]["Names"].value;
+			
+			if(x==""||x==null||y==""||y==null||z==""||z==null){
+			var pop = document.getElementById("myPopup");
+			pop.classList.toggle("show");
+			
+			}
+		else{
+		var pop = document.getElementById("myPop");
+			pop.classList.toggle("show");
+			
+			}	
+	}
+	
+	</script>
+	</head>
+	<body>
+		<div class="container">
+
+     
+        <div class="navbar navbar-inverse navbar-fixed-top"> 
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+               <header>
+					<img src ="logo.png" alt ="logo.area" class="logo.png" width = "100" height ="50" />
+            </div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">HOME</a></li>
+                
+                       <li><a href="Areas.html">AREA</a></li> 
+                       <li> <a href=""> DISTRIBUTION CENTER </a> </li>
+                    <li><a href="gallery.html">GALLERY</a></li> 
+                    <li><a href="contact.html">CONTACT</a></li> 
+                </ul>
+            </div>
+     </header>
+           
+        </div>
+    </div> 
+    
+     
+      <aside class="aside1">
+       <div >              
+             <h3 align="center">Our Location</h3><br/>    
+            <p align="left"><strong> <img src="images/location.jpg" width="16" height="16" class="loc">   Address: </strong> Kamaladi,Kathmandu,Nepal</p>					 
+            <p align="left"> <img src="images/tel.png" width="16" height="16" class="loc">   Phone: +977 014529746, +977 01525634</p>
+            <p align="left"> <img src="images/email.jpg" width="16" height="16" class="loc">   Email:reliefmanagement@gmail.com</p>
+			<p align="left"> <img src="images/website.png" width="16" height="16" class="loc">   Website:reliefmanagement.org.np</p><br/>
+			
+		</div> <br/>
+		</aside>
+    
+	
+   <div id="map" class="map1">
+   
+   
+    <script>
+      function initMap() {
+        var nepal = {lat: 27.71,lng: 85.32};
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 15,center: nepal});
+        var marker = new google.maps.Marker({position: nepal,map: map});
+      }
+	  
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQzkXUVU1_unYhz1F6y-twor5GpZQ4II&callback=initMap">
+    </script><br/>
+	</div>
+	
+	<br/>
+	  
+      <aside class="aside2">
+	  <div>
+		<h4 id="rcorner">We are always ready to answer your queries. You can call, email or fill the form to get your answers.</h4>
+	  
+	  </div>
+	  </aside>
+	  
+	  
+		<section class="section1">
+		<article>
+	   <h4>Please fill the form below to reach at us<br /><h4>
+                    
+			<form name="myform">
+			<div class="formvalid">
+				Name : <input type="text" name="name" required><br/><br/>
+			   Email : <input type="email" name="email" required><br/><br/>
+		        	   <textarea name="Names" rows="6" cols="65" type="message" required placeholder="Message"></textarea><br/>
+			   
+                     <div class="popup">
+					<span class="popuptext" id="myPopup">Empty fields</span>
+					<span class="popuptext" id="myPop">Thankyou</span>
+  
+						</div>
+					<input type="submit"  value="Submit" onClick="myfunction()">
+
+			</div>
+			</form>  
+	</article>
+	</section>			
+			</div>
+            </div>
+			</div>
+			
+			
+			<div id="footer-bg">
+			<div id="footer-content" class="container">
+			<div id="column1">
+			<h2>Recommended Links</h2>
+			<ul class="style1">
+				<li class="first">Nepal Relief fund </li>
+				<li>Kantipur paper .</li>
+				<li>Samtahik paper </li>
+				<li>Journel on our projects </li>
+				<li>Latest links </li>
+				<li></li>
+			</ul>
+			</div>
+			<div id="column3"></div>
+			<div id="column4">
+			<h2>Social</h2>
+			<ul class="style1">
+				<li class="first"><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Google +</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">RSS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container">
+  <p>&copy; Untitled. All rights reserved. Design byTeam </p>
+</div>
+</div>
+</div>
+</body>
+</html>

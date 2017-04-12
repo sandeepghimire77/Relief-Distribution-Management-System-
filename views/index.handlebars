@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>RDMS</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/sty.css" />
+    <script type="text/javascript">
+
+        var image_tracker = 'image1.jpg';
+        function  change() {
+            var image = document.getElementById('img');
+            if(image_tracker=='image1.jpg') {
+                image.src='images/mage2.jpg';
+
+                image_tracker = 'mage2.jpg';
+            }
+            else if (image_tracker=='mage2.jpg') {
+                image.src= 'images/image3.jpg';
+
+                image_tracker= 'image3.jpg';
+            }
+            else if (image_tracker=='image3.jpg'){
+                image.src= 'images/image4.jpg';
+
+                image_tracker= 'image4.jpg';
+            }
+            else if (image_tracker=='image4.jpg') {
+                image.src= 'images/image1.jpg';
+
+                image_tracker= 'image5.jpg';
+            }
+
+            else  {
+                image.src ='images/image5.jpg';
+                image_tracker='image1.jpg';
+            }
+        }
+        var timer = setInterval('change()',4000);
+
+        function showProperties(){
+            document.getElementById('message').innerHTML = "click here to see news" ;
+        }
+
+    </script>
+
+</head>
+
+<body>
+{{> header}}
+
+
+
+    <div id="banners">
+
+        <div id="img-border">
+
+            <img src="/images/image1.jpg" style="padding: 0px; border-width: 0px; width: 1180px; height: 500px" class="img-thumbnail" id ="img" alt="" onClick="clearInterval(timer);">
+
+
+
+
+
+        </div>
+        </div>
+
+    <div id="news">
+        <h3 class="style2" style="text-decoration: dotted"><em> <strong>Upcoming events </strong></em></h3>
+        <blockquote>
+            <p><span class="text-left style2">There are no events at this time         </span>  </p>
+        </blockquote>
+
+
+<!-- code here -->
+        <h3 class="style2" style="text-decoration: dotted"><em> <strong>Latest News </strong></em></h3>
+        <button type="button" class="btn btn-info"  data-toggle="collapse" data-target="#demo"  id="message" onmouseover = "showProperties()" onmouseleave = "document.getElementById('message').innerHTML='View';"><h4><em> <strong> &nbsp View &nbsp </strong></em></h4> </button>
+        <div id="demo" class="collapse">
+
+
+            <ol><a href="">Team for relief in nepal formed</a></ol>
+            <ol><li><a href="">Relief team serving in african nations </a></li></ol>
+            <ol> <li><a href="">Relief team being awarded by nepaliese primeminsiter</a></li></ol>
+
+
+</div>
+</div>
+
+
+
+    <div id="intro"> <!-- code here added at last -->
+
+        <h3 class="style5" > Relief distribution management system.</h3>
+        <h4 class="style5" style="text-decoration-color: black" >Introduction:</h4>
+        <p class="style6">Relief disribution management system is a nonprofit, nonpartisan webportal with a stated mission to improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care</p>
+        <p class="style6">Relief Efforts April 2015 Nepal earthquake In response to the Nepal Earthquake,Relief distribution management system webportal mobilized and delivered via 118,000 pounds of medical aid, which included 6.2 million defined daily doses of medications.</p>
+        <p class="style6"></p>
+        <p class="style6">
+            Relief disribution management system is a nonprofit, nonpartisan webportal with a stated mission to improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care
+        </p>
+        <p class="style6">Relief Efforts April 2015 Nepal earthquake In response to the Nepal Earthquake,Relief distribution management system webportal mobilized and delivered via 118,000 pounds of medical aid, which included 6.2 million defined daily doses of medications.</p>
+        <p class="style6">written by Relief distribution management Team
+        </p>
+    </div>
+{{> footer}}
+</body>
+</html>
+

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Relief  </title>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    
+    
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="slide.css" rel="stylesheet" type="text/css" /> 
+	<script type="text/javascript" href="js/js.js">
+    <!-- <script type="=text/javascript" href="js.js"> -->
+</script> 
+</style>
+<script>
+var image_tracker = 'image1.jpg';
+function  change() {
+var image = document.getElementById('img');
+if(image_tracker=='image1.jpg') {
+	image.src='images/mage2.jpg';
+	image_tracker = 'mage2.jpg';
+	}
+	else if (image_tracker=='mage2.jpg') {
+	image.src= 'images/image3.jpg';
+	image_tracker= 'image3.jpg';
+	}
+	else if (image_tracker=='image3.jpg'){
+	image.src= 'images/image4.jpg';
+	image_tracker= 'image4.jpg';
+	}
+	else if (image_tracker=='image4.jpg') {
+	image.src= 'images/image1.jpg';
+	image_tracker= 'image5.jpg';
+	}
+	
+	else  {
+	image.src ='images/image5.jpg';
+	image_tracker='image1.jpg';
+	}
+	}
+	var timer = setInterval('change()',2000);
+	
+	
+	
+	</script>
+	
+	
+
+
+
+
+	
+</head>
+<body>
+<div class="container">
+
+     <!-- Nav section -->
+        <div class="navbar navbar-inverse navbar-fixed-top"> 
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+               <header>
+<img src ="logo.png" alt ="logo.area" class="logo.png" width = "100" height ="50" />
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Index.html">HOME</a></li>
+                
+                       <li><a href="Areas.html">AREA</a></li> 
+                  <li> <a href=""> DISTRIBUTION CENTER </a> </li>
+                    <li><a href="">GALLERY</a></li> 
+                    <li><a href="contact.html">CONTACT</a></li> 
+					  
+					<li class = "login" style="font-family:Arial"  > <a href="login3.html">  Login  </a></li> 
+					
+				 
+				 </ul>
+            </div>
+     </header>
+           
+        </div>
+    </div>
+<!--END NAV SECTION -->
+     <!-- making slide show of image -->
+    
+     <div id="banner">
+    <div class="img-border"> 
+     <a href="#"> </a>
+     <!-- 1120  400 -->
+   <img src="images/image1.jpg" width="1120" height="400" id ="img" alt="" onClick="clearInterval(timer);">       </div> 
+   
+  </div>
+</div> 
+</div>
+</div>
+
+<div id="wrapper">
+	<div id="page-wrapper">
+		<div id="page">
+			<div id="content">
+				<h2>Welcome </h2>
+				<h2>Relief distribution management system.</h2>
+				<h3>Introduction:</h3>
+				<p>Relief disribution management system is a nonprofit, nonpartisan webportal with a stated mission to “improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care</p>
+				<p>Relief Efforts April 2015 Nepal earthquake In response to the Nepal Earthquake,Relief distribution management system webportal mobilized and delivered via 118,000 pounds of medical aid, which included 6.2 million defined daily doses of medications.</p>
+				written by Relief distribution management Team
+				<p>&nbsp;</p>
+				<p><img src="images/imp.jpg" alt="" width="273" height="298" class="alignleft" />Relief disribution management system is a nonprofit, nonpartisan webportal with a stated mission to “improve the health and lives of people affected by poverty or emergency situations by mobilizing and providing essential medical resources needed for their care</p>
+			    <p>Relief Efforts April 2015 Nepal earthquake In response to the Nepal Earthquake,Relief distribution management system webportal mobilized and delivered via 118,000 pounds of medical aid, which included 6.2 million defined daily doses of medications.</p>
+			    written by Relief distribution management Team
+		      <p class="button-style"><a href="#">More Details</a></p>
+			</div>
+			<div id="sidebar">
+				<h2>Upcoming News</h2>
+		  <ul class="style1">
+		    <li class="first">Relief plan in Kathmandu </li>
+					<li>Meeting with kp oli</li>
+					<li>Meeting with Army officials</li>
+					<li>Releif plan in teria </li>
+					<li>Plan in hilly areas</li>
+					<li>Releif plan in Diarahoo areas</li>
+					<li>Relief plan in Himal</li>
+				</ul>
+			  <p class="button-style"><a href="#">More Details</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer-bg">
+<div id="footer-content" class="container">
+		<div id="column1">
+		  <h2>Recommended Links</h2>
+			<ul class="style1">
+				<li class="first">Nepal Relief fund </li>
+				<li>Kantipur paper .</li>
+				<li>Samtahik paper </li>
+				<li>Journel on our projects </li>
+				<li>Latest links </li>
+				<li></li>
+			</ul>
+    </div>
+		<div id="column3"></div>
+<div id="column4">
+			<h2>Social</h2>
+			<ul class="style1">
+				<li class="first"><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Flickr</a></li>
+				<li><a href="#">Google +</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">RSS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container">
+  <p>&copy; Untitled. All rights reserved. Design byTeam </p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
