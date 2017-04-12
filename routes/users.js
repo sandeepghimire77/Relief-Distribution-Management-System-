@@ -1,11 +1,10 @@
 var express=require('express');
 var router = express.Router();
 var app = express();
-<<<<<<< HEAD
 var passport=require('passport');
-=======
-var passport=require('passport')
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
+var passport=require('passport');
+
 var LocalStrategy=require('passport-local').Strategy;
 var socket=require('socket.io');
 var User= require('../models/user');
@@ -113,18 +112,16 @@ router.get('/Gallery',function(req,res)
 
 
 });
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
+
+
 router.get('/message',function(req,res) {
     res.sendFile(__dirname + '/message.html');
-=======
 
 
 router.get('/message',function(req,res)
 {
->>>>>>> 2eb54df56fcce3e01d72c3de3ec517d1bdddc77f
+
 
 
 router.get('/message',function(req,res) {
@@ -132,15 +129,9 @@ router.get('/message',function(req,res) {
 
 });
 
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
 
 
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
 
 //router.get('/affected',function(req,res)
 //{
@@ -150,18 +141,15 @@ router.get('/message',function(req,res) {
 //});
 
 
->>>>>>> 2eb54df56fcce3e01d72c3de3ec517d1bdddc77f
+
 });
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 //router.get('/affected',function(req,res)
 //{
 //  res.render('affected')
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2eb54df56fcce3e01d72c3de3ec517d1bdddc77f
 
 //router.get('/affected',function(req,res)
 //{
@@ -205,11 +193,11 @@ router.get('/login', function (req, res) {
     res.render('login');
 });
 //Admin Dashboard
-<<<<<<< HEAD
+
 router.get('/Dashboard', function (req, res) {
     res.render('Dashboard');
 });
-=======
+
     router.get('/Dashboard', function (req, res) {
         res.render('Dashboard');
     });
@@ -218,17 +206,16 @@ router.get('/Dashboard', function (req, res) {
     router.get('/zone', function (req, res) {
         res.render('zone');
     });
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
 router.get('/zone', function (req, res) {
     res.render('zone');
 });
 
-<<<<<<< HEAD
+
 router.get('/service', function (req, res) {
     res.render('service');
 });
-=======
     router.get('/zone', function (req, res) {
         res.render('zone');
     });
@@ -238,7 +225,7 @@ router.get('/service', function (req, res) {
     router.get('/service', function (req, res) {
         res.render('service');
     })
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
 
 // Register User
@@ -283,13 +270,13 @@ router.post('/login', function (req, res) {
     console.log('Post started');
     console.log(username);
 
-<<<<<<< HEAD
+
     connection.query("SELECT * FROM `user` WHERE `UserName` = '" + username + "'", function (err, rows) {
         if (err) {
             req.flash('Username not exist');
             res.redirect('/users/login');
         }
-=======
+
         connection.query("SELECT * FROM `user` WHERE `UserName` = '" + username + "'", function (err, rows) {
             if (err) {
                 req.flash('error_msg','Username not exist');
@@ -302,7 +289,7 @@ router.post('/login', function (req, res) {
 
                 res.redirect('/users/login');
             }
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
         if ((rows[0].UserType == 1)) {
 
@@ -323,14 +310,14 @@ router.post('/login', function (req, res) {
 
             console.log('User logged in');
 
-<<<<<<< HEAD
+
             if (rows[0].UserName == username && rows[0].Password == password) {
                 console.log(rows[0].UserName);
                 res.redirect('/users/userdashboard')
             }
             else {
                 console.log('error');
-=======
+
                 if (rows[0].UserName == username && rows[0].Password == password) {
                     console.log(rows[0].UserName);
                     req.flash('success_msg', 'You are logged in', rows[0].UserName);
@@ -339,7 +326,7 @@ router.post('/login', function (req, res) {
                 else {
                     console.log('error')
                     req.flash('error_msg', 'Username and Password did not match');
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
 
                 res.redirect('/users/login');
@@ -349,12 +336,12 @@ router.post('/login', function (req, res) {
         }
 
 
-<<<<<<< HEAD
-    });
+
+    }
 
 
 })
-=======
+
 
         });
 
@@ -362,21 +349,21 @@ router.post('/login', function (req, res) {
 
 
     })
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
 
 
 //Search
 router.post('/search', function (req, res) {
 
-<<<<<<< HEAD
+
     var firstname = req.body.firstname;
     console.log(firstname);
-=======
+
 
         var firstname = req.body.firstname;
         console.log(firstname);
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
     /*passport.use('local', new LocalStrategy({
      // by default, local strategy uses username and password
@@ -386,11 +373,11 @@ router.post('/search', function (req, res) {
      },*/
 
 
-<<<<<<< HEAD
+
     // callback with username and password from our form
     console.log('Search started');
     console.log(firstname);
-=======
+
         var firstname = req.body.firstname;
         console.log(firstname);
 
@@ -398,7 +385,7 @@ router.post('/search', function (req, res) {
         // callback with username and password from our form
         console.log('Search started');
         console.log(firstname);
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
+
 
     connection.query("SELECT * FROM `user` WHERE `FirstName` = '" + firstname + "'", function (err, rows) {
         //console.log(rows[0].FirstName);
@@ -417,19 +404,13 @@ router.post('/search', function (req, res) {
              passReqToCallback : true // allows us to pass back the entire request to the callback
              },*/
 
-<<<<<<< HEAD
+
     });
-=======
->>>>>>> 11d7a9d8f4ba1f992b64f69019a47d7a7ccd2825
 
             // callback with username and password from our form
             console.log('Search started');
             console.log(firstname);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2eb54df56fcce3e01d72c3de3ec517d1bdddc77f
 
             connection.query("SELECT * FROM `user` WHERE `FirstName` = '" + firstname + "'", function (err, rows) {
                 //console.log(rows[0].FirstName);
